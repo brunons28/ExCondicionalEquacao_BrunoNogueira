@@ -1,0 +1,49 @@
+package exercíciocondição3_brunonogueira;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Lenovo
+ */
+public class ExercícioCondição3_BrunoNogueira {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       Scanner entrada = new Scanner (System.in);
+       float vA,vB,vC,delta,x1,x2;
+       
+       System.out.print("Digite o valor A: ");
+       vA = entrada.nextFloat();
+       
+       System.out.print("Digite o valor B: ");
+       vB = entrada.nextFloat();
+       
+       System.out.print("Digite o valor C: ");
+       vC = entrada.nextFloat();
+       
+       
+       if(vA!=0);
+       delta = (float) (Math.pow(vB,2)-(4*vA*vC));
+       
+       
+      if(delta>0)
+      {
+        x1 = (float) (((-vB) +Math.sqrt(delta))/(2*vA)); 
+        x2 = (float) (((-vB) -Math.sqrt(delta))/(2*vA));
+        System.out.print("As raizes são x1: "+x1+" e x2: "+x2);
+      }
+      else if(delta == 0)
+      {
+        x1 = (float)(((-vB) +Math.sqrt(delta))/(2*vA));
+        System.out.print("As raizes são x1: "+x1);
+      }
+      else if(delta<0)
+      System.out.print("A equação não apresenta resultados reais");
+       
+       
+    }
+    
+}
